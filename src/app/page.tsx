@@ -522,11 +522,11 @@ export default function Portfolio() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
-                <div className="text-2xl font-bold text-cyan-400 animate-pulse">50+</div>
+                <div className="text-2xl font-bold text-cyan-400 animate-pulse">10+</div>
                 <div className="text-sm text-gray-300">Projects Completed</div>
               </div>
               <div className="p-4 bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
-                <div className="text-2xl font-bold text-orange-500 animate-pulse">5+</div>
+                <div className="text-2xl font-bold text-orange-500 animate-pulse">2+</div>
                 <div className="text-sm text-gray-300">Years Experience</div>
               </div>
               <div className="p-4 bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
