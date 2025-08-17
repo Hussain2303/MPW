@@ -183,31 +183,55 @@ function Card3D({ children, className, ...props }: any) {
 const projects = [
   {
     title: "E-Commerce Platform",
-    description: "Full-stack React application with payment integration",
-    tech: ["React", "Node.js", "Stripe", "MongoDB"],
+    description: "Full-stack MERN application with payment integration and admin dashboard",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
     image: "/modern-ecommerce-interface.png",
     link: "#",
   },
   {
     title: "3D Visualization Tool",
-    description: "Interactive 3D data visualization using Three.js",
+    description: "Interactive 3D data visualization dashboard using Three.js and D3.js",
     tech: ["Three.js", "WebGL", "D3.js", "TypeScript"],
     image: "/3d-data-dashboard.png",
     link: "#",
   },
   {
     title: "Mobile App Design",
-    description: "UI/UX design for fitness tracking mobile application",
-    tech: ["Figma", "React Native", "Animation", "Prototyping"],
-    image: "/mobile-fitness-app-mockup.png",
+    description: "UI/UX design for fitness tracking mobile application with interactive animations",
+    tech: ["Figma", "React Native", "Prototyping"],
+    image: "/fitness.png",
+    link: "#",
+  },
+  {
+    title: "Task Management App",
+    description: "Trello-like app with drag-and-drop functionality and real-time updates",
+    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+    image: "/maxresdefault.jpg",
+    link: "#",
+  },
+  {
+    title: "AI Chatbot",
+    description: "Python-based chatbot with NLP for customer support automation",
+    tech: ["Python", "Flask", "NLTK", "TensorFlow"],
+    image: "/ai-chatbot-ui.jpeg",
+    link: "#",
+  },
+  {
+    title: "Portfolio Website",
+    description: "Fully animated personal portfolio with 3D elements and smooth transitions",
+    tech: ["React", "Next.js", "Framer Motion", "Tailwind CSS"],
+    image: "/portfolio.png",
     link: "#",
   },
 ]
 
 const skills = [
-  { name: "Frontend Development", icon: Code, level: 95 },
-  { name: "3D Graphics", icon: Zap, level: 85 },
   { name: "UI/UX Design", icon: Palette, level: 90 },
+  { name: "Backend Development", icon: Zap, level: 90 },
+  { name: "Frontend Development", icon: Code, level: 95 },
+  //{ name: "Database Management", icon: Database, level: 88 },
+  { name: "Python", icon: Zap, level: 85 },
+  //{ name: "Python Development", icon: Terminal, level: 80 },
 ]
 
 export default function Portfolio() {
@@ -497,9 +521,14 @@ export default function Portfolio() {
                     <div className="text-6xl text-gray-500 animate-pulse">👤</div>
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white text-sm text-center px-4">
-                      profile
+                    
                         <br />
-                        <span className="text-cyan-400">Add your image here</span>
+                        <span className="text-cyan-400"> <Image
+                    src={"/Github Pic.jpg"}
+                    alt={"profile"}
+                    width={600}
+                    height={600}
+                  /></span>
                       </p>
                     </div>
                   </div>
@@ -517,7 +546,7 @@ export default function Portfolio() {
                 <div className="absolute -bottom-1 left-0 w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-orange-500"></div>
               </h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                A passionate full-stack developer and 3D enthusiast with over 5 years of experience creating innovative
+                A passionate full-stack developer and 3D enthusiast with over 2 years of experience creating innovative
                 digital solutions. I specialize in modern web technologies and love bringing creative visions to life
                 through code.
               </p>
@@ -633,7 +662,7 @@ export default function Portfolio() {
                   size="icon"
                   variant="ghost"
                   className="text-gray-300 hover:text-cyan-400 hover:bg-gray-800 transform hover:scale-110 transition-all duration-300 animate-bounce"
-                  onClick={() => window.open("https://github.com", "_blank")}
+                  onClick={() => window.open("https://www.linkedin.com/in/muhammad-hussain-23h2003/", "_blank")}
                 >
                   <Github className="h-6 w-6" />
                 </Button>
@@ -641,7 +670,7 @@ export default function Portfolio() {
                   size="icon"
                   variant="ghost"
                   className="text-gray-300 hover:text-cyan-400 hover:bg-gray-800 transform hover:scale-110 transition-all duration-300 animate-bounce"
-                  onClick={() => window.open("https://linkedin.com", "_blank")}
+                  onClick={() => window.open("https://github.com/Hussain2303", "_blank")}
                 >
                   <Linkedin className="h-6 w-6" />
                 </Button>
@@ -649,7 +678,7 @@ export default function Portfolio() {
                   size="icon"
                   variant="ghost"
                   className="text-gray-300 hover:text-cyan-400 hover:bg-gray-800 transform hover:scale-110 transition-all duration-300 animate-bounce"
-                  onClick={() => window.open("mailto:hello@portfolio.dev", "_blank")}
+                  onClick={() => window.open("mailto:hussainajmal6780@gmail.com", "_blank")}
                 >
                   <Mail className="h-6 w-6" />
                 </Button>
