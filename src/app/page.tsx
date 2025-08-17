@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -437,7 +438,7 @@ export default function Portfolio() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="aspect-video overflow-hidden rounded-t-lg relative">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -494,7 +495,7 @@ export default function Portfolio() {
                     <div className="text-6xl text-gray-500 animate-pulse">👤</div>
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white text-sm text-center px-4">
-                       <img src=" " />
+                       <Image src=" " alt="hero" />
                         <br />
                         <span className="text-cyan-400">Add your image here</span>
                       </p>
