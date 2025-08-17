@@ -437,16 +437,18 @@ export default function Portfolio() {
                 className="group bg-gray-900 border-gray-700 hover:border-cyan-400 transition-all duration-500 animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="aspect-video overflow-hidden rounded-t-lg relative">
+                <div className="aspect-video overflow-hidden rounded-t-lg relative rounded-xl ">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 mb-2"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <CardHeader>
-                  <CardTitle className="font-heading font-bold text-white">{project.title}</CardTitle>
+                  <CardTitle className="font-heading font-bold text-white mt-5">{project.title}</CardTitle>
                   <CardDescription className="text-gray-300">{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -495,7 +497,7 @@ export default function Portfolio() {
                     <div className="text-6xl text-gray-500 animate-pulse">👤</div>
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white text-sm text-center px-4">
-                       <Image src=" " alt="hero" />
+                      profile
                         <br />
                         <span className="text-cyan-400">Add your image here</span>
                       </p>
